@@ -1,0 +1,83 @@
+@{
+    Layout = "_LayoutLogin";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 offset-md-4">
+            <div class="row m-3">
+                <div class="col-md-12">
+                    <div class="mx-auto text-center">
+                        <a class="navbar-brand" href="#" title="Inicio">
+                            <img src={book} alt="" width="50" />
+                        </a>
+                        <h3>Change Books</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border border-dark p-4">
+                <div class="form-group py-2">
+                    <label for="name" class="font-weight-bold">
+                        Nombre
+                    </label>
+                    <input type="text" class="form-control" id="name" aria-describedby="emailHelp"
+                        autoComplete="disabled" placeholder="Juan Perez" />
+                </div>
+                <div class="form-group py-2">
+                    <label for="email" class="font-weight-bold">
+                        Correo
+                    </label>
+                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                        autoComplete="disabled" placeholder="juanperez123@gmail.com" />
+                </div>
+                <div class="form-group py-2">
+                    <label for="phone" class="font-weight-bold">
+                        Número de telefono
+                    </label>
+                    <input type="tel" class="form-control" id="phone" aria-describedby="emailHelp"
+                        autoComplete="disabled" placeholder="0981123456" maxLength="10" />
+                </div>
+                <div class="form-group py-2">
+                    <label for="password" class="font-weight-bold">
+                        Contraseña
+                    </label>
+                    <input type="password" class="form-control" id="password" />
+                </div>
+                <div class="form-group py-2 pb-3">
+                    <label for="confirm-password" class="font-weight-bold">
+                        Confirmar Contraseña
+                    </label>
+                    <input type="password" class="form-control" id="confirm-password" />
+                </div>
+                <button type="button" class="btn btn-dark text-ligth btn-lg btn-block">
+                    Continuar
+                </button>
+
+                <!--div class="alert alert-danger mt-4 text-center" style={!warning ? { display: "none" } : {}}
+                    role="alert">
+                    {warning}
+                </div-->
+
+                <div class="mt-4">
+                    <small id="emailHelp" class="form-text text-muted">
+                        Al crear una cuenta, acepta las
+                        <a href="">
+                            Condiciones de uso y el Aviso de privacidad
+                        </a>
+                        de Book Changes.
+                    </small>
+                </div>
+
+                <hr class="line-horizontal my-5" />
+                <div class="mt-4">
+                    <small id="emailHelp" class="form-text text-muted d-flex justify-content-center">
+                        Ya tienes una cuenta &nbsp;
+                        <a asp-controller="Login" asp-action="Index">Inicia Sesión</a>
+                    </small>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+</div>

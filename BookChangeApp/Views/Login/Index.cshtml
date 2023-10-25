@@ -1,0 +1,57 @@
+@{
+    Layout = "_LayoutLogin";
+}
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 offset-md-4">
+            <div class="row m-3">
+                <div class="col-md-12">
+                    <div class="mx-auto text-center">
+                        <a class="navbar-brand" href="#" title="Inicio">
+                            <img src={book} alt="" width="50" />
+                        </a>
+                        <h3>Change Books</h3>
+                    </div>
+                </div>
+            </div>
+
+            <form class="border border-secondary p-4">
+                <div class="form-group py-2">
+                    <label for="emailValue" class="font-weight-bold">
+                        Correo
+                    </label>
+                    <input type="emailValue" class="form-control" id="emailValue" aria-describedby="emailValueHelp"
+                        autoComplete="disabled" />
+                </div>
+                <div class="form-group py-2">
+                    <label for="password" class="font-weight-bold">
+                        Contraseña
+                    </label>
+                    <input type="password" class="form-control" id="password" />
+                </div>
+                <button type="submit" class="btn btn-dark text-ligth btn-lg btn-block " id="btn-submit">
+                    Iniciar Sesión
+                </button>
+
+                <hr class="line-horizontal my-5" />
+                <div class="mt-4">
+                    <small id="emailValueHelp" class="form-text text-muted d-flex justify-content-center">
+                        ¿Eres nuevo por aqui? &nbsp; <br />
+                        <a asp-controller="Login" asp-action="Signup">Cree su cuenta en Change Books</a>
+                    </small>
+                </div>
+            </form>
+            <!--div
+                            class={
+                                alert === ""
+                                    ? "alert alert-danger my-5 text-center d-none"
+                                    : "alert alert-danger my-5 text-center"
+                            }
+                            role="alert"
+                        >
+                            {alert}
+                        </div-->
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+</div>
