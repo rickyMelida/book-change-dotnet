@@ -1,9 +1,8 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    Layout = ViewBag.loggedIn ? "_Layout" : "_LayoutUnregistered";
 }
 
-@Html.Partial("BookSlider.cshtml")
-
+ @Html.Partial("BookSlider.cshtml")
 
 <div class="row bg-light my-5" id="others">
     @Html.Partial("~/Views/Shared/_TitleSection.cshtml")
@@ -13,6 +12,6 @@
         <div class="col-10 offset-2 col-sm-9 offset-sm-3 col-md-5 offset-md-1 col-xl-3 offset-xl-0 py-3">
             @Html.Partial("Card.cshtml")
         </div>
-    }
+    } 
 
 </div>
